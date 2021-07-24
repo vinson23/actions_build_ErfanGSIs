@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://dl.google.com/dl/android/aosp/redfin-rq3a.210705.001-factory-0d97c703.zip
-  ROM_NAME: Pixel
+  ROM_NAME: Generic
   TZ: Asia/Shanghai
 
 jobs:
