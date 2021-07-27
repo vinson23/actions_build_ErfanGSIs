@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://120-240-76-1.ksyungslb.com/bigota.d.miui.com/9.8.29/miui_MI5X_9.8.29_9c43b3cd13_8.1.zip?ksy_gslb_referer=http%3A%2F%2Fwww.miui.com%2F
-  ROM_NAME: miui_MI5X_9.8.29_9c43b3cd13_8.1
+  ROM_URL: http://bigota.d.miui.com/20.4.27/miui_MIMIX3_20.4.27_8f7879221b_10.0.zip
+  ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
 jobs:
@@ -55,11 +55,11 @@ jobs:
               mkdir final
               zip -r final/GSI.zip ./*
        
-       - name: Upload GSI to BitSend
+       - name: Upload GSI to WeTransfer
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof /final/GSI.zip
+              ./transfer wet ./final/GSI.zip
 
          
             
