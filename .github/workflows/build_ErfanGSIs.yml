@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://120-240-76-1.ksyungslb.com/bigota.d.miui.com/9.8.29/miui_MI5X_9.8.29_9c43b3cd13_8.1.zip?ksy_gslb_referer=http%3A%2F%2Fwww.miui.com%2F
-  ROM_NAME: MIUI
+  ROM_NAME: miui_MI5X_9.8.29_9c43b3cd13_8.1
   TZ: Asia/Shanghai
 
 jobs:
